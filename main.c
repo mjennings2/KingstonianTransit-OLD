@@ -25,15 +25,15 @@ int main() {
      * Light timing In format TBD.
      *
     */
-    int n;
     char line[80];
-
+    FILE * fr;
     fr = fopen ("Intersections.txt", "r");  /* open the file for reading */
 
     while(fgets(line, 80, fr) != NULL)
     {
         /* get a line, up to 80 chars from fr.  done if NULL */
-        sscanf  ( line );
+        fscanf(fr,"%f %f %f",&accel_x[i],&accel_y[i],&accel_z[i]);
+        fscanf(fr,"%f %f %f", );
     }
     fclose(fr);  /* close the file prior to exiting the routine */
 
@@ -45,7 +45,12 @@ int main() {
 
 
     // Output
-    printf("Hello Workd!");
+    printf("Hello Workd!\n");
+    int i = 0;
+    for(i=0; i<3;i++){
+        printf("%d\n",i);
+        printf("%c",line[i]);
+    }
     return 0;
 }
 

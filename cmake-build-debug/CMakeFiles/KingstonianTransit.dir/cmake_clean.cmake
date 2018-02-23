@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/KingstonianTransit.dir/main.c.obj"
-  "CMakeFiles/KingstonianTransit.dir/Intersection.c.obj"
   "KingstonianTransit.pdb"
   "KingstonianTransit.exe"
   "KingstonianTransit.exe.manifest"

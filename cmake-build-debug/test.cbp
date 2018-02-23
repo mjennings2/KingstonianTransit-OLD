@@ -80,12 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Mathew/Documents/APSC100 MOD3/KingstonianTransit/KingstonianTransit/cmake-build-debug/Intersection.c">
-			<Option target="KingstonianTransit"/>
-		</Unit>
-		<Unit filename="C:/Users/Mathew/Documents/APSC100 MOD3/KingstonianTransit/KingstonianTransit/cmake-build-debug/Intersection.h">
-			<Option target="KingstonianTransit"/>
-		</Unit>
 		<Unit filename="C:/Users/Mathew/Documents/APSC100 MOD3/KingstonianTransit/KingstonianTransit/main.c">
 			<Option target="KingstonianTransit"/>
 		</Unit>

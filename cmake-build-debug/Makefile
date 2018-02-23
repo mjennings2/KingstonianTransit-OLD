@@ -122,33 +122,6 @@ KingstonianTransit/fast:
 	$(MAKE) -f CMakeFiles\KingstonianTransit.dir\build.make CMakeFiles/KingstonianTransit.dir/build
 .PHONY : KingstonianTransit/fast
 
-Intersection.obj: Intersection.c.obj
-
-.PHONY : Intersection.obj
-
-# target to build an object file
-Intersection.c.obj:
-	$(MAKE) -f CMakeFiles\KingstonianTransit.dir\build.make CMakeFiles/KingstonianTransit.dir/Intersection.c.obj
-.PHONY : Intersection.c.obj
-
-Intersection.i: Intersection.c.i
-
-.PHONY : Intersection.i
-
-# target to preprocess a source file
-Intersection.c.i:
-	$(MAKE) -f CMakeFiles\KingstonianTransit.dir\build.make CMakeFiles/KingstonianTransit.dir/Intersection.c.i
-.PHONY : Intersection.c.i
-
-Intersection.s: Intersection.c.s
-
-.PHONY : Intersection.s
-
-# target to generate assembly for a file
-Intersection.c.s:
-	$(MAKE) -f CMakeFiles\KingstonianTransit.dir\build.make CMakeFiles/KingstonianTransit.dir/Intersection.c.s
-.PHONY : Intersection.c.s
-
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -185,9 +158,6 @@ help:
 	@echo ... KingstonianTransit
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Intersection.obj
-	@echo ... Intersection.i
-	@echo ... Intersection.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

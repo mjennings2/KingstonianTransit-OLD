@@ -1,0 +1,5 @@
+// This is for the direction the bus is traveling (EBL/WBL, E/W, NBL/SBL, N/S)
+// Intersection Green Amber All-Red Red
+0 
+1
+2
