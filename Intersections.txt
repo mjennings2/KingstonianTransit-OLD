@@ -2,5 +2,5 @@
 // Intersection Green Amber All-Red Red
 0 35 4 0 99
 1 40 4 3 94
-2 
-3 
+2 22 4 0 117
+3 14 4 0 113
