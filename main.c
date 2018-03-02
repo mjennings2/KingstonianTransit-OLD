@@ -25,17 +25,34 @@ int main() {
      * Light timing In format TBD.
      *
     */
-    char line[80];
-    FILE * fr;
-    fr = fopen ("Intersections.txt", "r");  /* open the file for reading */
 
-    while(fgets(line, 80, fr) != NULL)
-    {
-        /* get a line, up to 80 chars from fr.  done if NULL */
-        fscanf(fr,"%f %f %f",&accel_x[i],&accel_y[i],&accel_z[i]);
-        fscanf(fr,"%f %f %f", );
+    int i=0, j=0, k=0;
+    int trafficCount [3][12][4][1];
+    int intersections [4] = { };
+    int hours [12] = { 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 };
+    int north [3][12];
+    int south [3][12];
+    int east [3][12];
+    int west [3][12];
+
+    // Traffic count
+    FILE * trafficFile;
+    trafficFile = fopen("../trafficCount.txt","r");
+    if (trafficFile == NULL){
+        printf("Could not open traffic file\n");
     }
-    fclose(fr);  /* close the file prior to exiting the routine */
+
+    int N = 30;
+    fscanf(trafficFile,"%d",N);
+
+
+    for (i = 0; i < N; i++)    {
+        int temp = 0;
+        int temp2 = 0;
+        fscanf(trafficFile,"%f %f %f %f %f %f",temp,temp2,&north[temp][temp2],&south[temp][temp2],&east[temp][temp2],&west[temp][temp2]);
+
+    }
+    fclose(trafficFile);
 
 
 
@@ -46,10 +63,10 @@ int main() {
 
     // Output
     printf("Hello Workd!\n");
-    int i = 0;
+    i = 0;
     for(i=0; i<3;i++){
         printf("%d\n",i);
-        printf("%c",line[i]);
+       //printf("%c",line[i]);
     }
     return 0;
 }

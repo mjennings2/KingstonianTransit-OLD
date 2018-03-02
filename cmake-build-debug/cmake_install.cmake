@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Mathew/Documents/APSC100 MOD3/KingstonianTransit/KingstonianTransit
+# Install script for directory: C:/Users/ernew/Documents/GitHub/KingstonianTransit
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Mathew/Documents/APSC100 MOD3/KingstonianTransit/KingstonianTransit/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/ernew/Documents/GitHub/KingstonianTransit/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
