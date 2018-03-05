@@ -81,8 +81,21 @@ int main() {
         printf("%d %d %d %d\n", greenTimes[i], amberTimes[i], allRedTimes[i], redTimes[i]);
     }
 
+    // Scan buses file to input how many buses go each hour.
+    FILE * busesFile;
+    busesFile = fopen("../busses.txt","r");
+    if(busesFile == NULL){
+        printf("Could not open buses file\n");
+    }
+    n = 0;
+    fscanf(busesFile,"%d",&n);
+    printf("%d\n",n);
 
-
+    int busesPerHour[n];
+    for(i = 0; i < n; i++){
+        fscanf(busesFile, "%d", &busesPerHour[i]);
+        printf("%d\n", busesPerHour[i]);
+    }
 
     // Computation
 
