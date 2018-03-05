@@ -26,7 +26,7 @@ int main() {
      *
     */
 
-    int i=0, j=0, k=0;
+    int i=0;
     int trafficCount [3][12][4][1];
     int intersections [4] = { };
     int hours [12] = { 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 };
@@ -34,25 +34,37 @@ int main() {
     int south [3][12];
     int east [3][12];
     int west [3][12];
-
     // Traffic count
+
     FILE * trafficFile;
     trafficFile = fopen("../trafficCount.txt","r");
     if (trafficFile == NULL){
         printf("Could not open traffic file\n");
     }
 
-    int N = 30;
-    fscanf(trafficFile,"%d",N);
+    int n;
+    fscanf(trafficFile,"%d",&n);
+    printf("%d\n",n);
 
-
-    for (i = 0; i < N; i++)    {
+    for (i = 0; i < n; i++){
+        int temp = 0;
+        int temp2 = 0;
+        fscanf(trafficFile, "%d %d", &temp, &temp2);
+        printf("%d %d\n", temp, temp2);
+        fscanf(trafficFile," %d %d %d %d",&north[temp][temp2],&south[temp][temp2],&east[temp][temp2],&west[temp][temp2]);
+        printf("%d %d %d %d\n", north[temp][temp2], south[temp][temp2], east[temp][temp2], west[temp][temp2]);
+    }
+    fclose(trafficFile);
+    /*
+    for (i = 0; i < n; i++)    {
         int temp = 0;
         int temp2 = 0;
         fscanf(trafficFile,"%f %f %f %f %f %f",temp,temp2,&north[temp][temp2],&south[temp][temp2],&east[temp][temp2],&west[temp][temp2]);
+        printf("%f %f\n",temp,temp2);
+    }*/
+  //  fclose(trafficFile);
 
-    }
-    fclose(trafficFile);
+
 
 
 
@@ -68,7 +80,7 @@ int main() {
         printf("%d\n",i);
        //printf("%c",line[i]);
     }
-    return 0;
+    //return 0;
 }
 
 
