@@ -80,6 +80,7 @@ int main() {
         fscanf(lightFile, "%d %d %d %d", &greenTimes[i], &amberTimes[i], &allRedTimes[i], &redTimes[i]);
         printf("%d %d %d %d\n", greenTimes[i], amberTimes[i], allRedTimes[i], redTimes[i]);
     }
+    fclose(lightFile);
 
     // Scan buses file to input how many buses go each hour.
     FILE * busesFile;
@@ -96,9 +97,32 @@ int main() {
         fscanf(busesFile, "%d", &busesPerHour[i]);
         printf("%d\n", busesPerHour[i]);
     }
+    fclose(busesFile);
 
     // Computation
 
+    // Calculate percent chances
+    // given 50 km/h on princess and 20 km/h leaving the Cataraqui center
+    int timeFor150m [4] = {11,11,11,36};
+    int percentGreen [4];
+    int percentExtend [4];
+    int percentRed [4];
+
+
+    int hour = 0;
+    int maxHours = 24;
+
+    int j, k;
+    int arrivals [4];
+    int extensions[4];
+    int truncations [4];
+    int greenLights [4];
+    // Simulate bus loop
+    for(hour = 0; hour < maxHours; hour++){
+        for(i = 0; i < busesPerHour[hour]; i++){
+
+        }
+    }
 
     // Output
     printf("Hello Workd!\n");
