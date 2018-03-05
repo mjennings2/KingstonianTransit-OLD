@@ -34,8 +34,9 @@ int main() {
     int south [3][12];
     int east [3][12];
     int west [3][12];
-    // Traffic count
 
+
+    // Scan Traffic count and input number of cars in each direction
     FILE * trafficFile;
     trafficFile = fopen("../trafficCount.txt","r");
     if (trafficFile == NULL){
@@ -55,17 +56,30 @@ int main() {
         printf("%d %d %d %d\n", north[temp][temp2], south[temp][temp2], east[temp][temp2], west[temp][temp2]);
     }
     fclose(trafficFile);
-    /*
-    for (i = 0; i < n; i++)    {
-        int temp = 0;
-        int temp2 = 0;
-        fscanf(trafficFile,"%f %f %f %f %f %f",temp,temp2,&north[temp][temp2],&south[temp][temp2],&east[temp][temp2],&west[temp][temp2]);
-        printf("%f %f\n",temp,temp2);
-    }*/
-  //  fclose(trafficFile);
 
+    // Scan Intersections and input amount of time for each phase of the light in the buses direction of travel.
+    // This is for the direction the bus is traveling (EBL/WBL, E/W, NBL/SBL, N/S)
+    // Intersection Green Amber All-Red Red
+    i = 0;
 
+    FILE * lightFile;
+    lightFile = fopen("../Intersections.txt","r");
+    if (lightFile == NULL){
+        printf("Could not open Light file\n");
+    }
+    n = 0;
+    fscanf(lightFile,"%d",&n);
+    printf("%d\n",n);
 
+    int greenTimes [n];
+    int amberTimes [n];
+    int allRedTimes [n];
+    int redTimes [n];
+
+    for(i = 0; i < n; i++){
+        fscanf(lightFile, "%d %d %d %d", &greenTimes[i], &amberTimes[i], &allRedTimes[i], &redTimes[i]);
+        printf("%d %d %d %d\n", greenTimes[i], amberTimes[i], allRedTimes[i], redTimes[i]);
+    }
 
 
 
