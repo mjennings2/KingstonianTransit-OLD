@@ -8,11 +8,8 @@ int MAX_TRUNC = 5;
 int MIN_EXTE = 0;
 int MAX_EXTE = 15;
 int CHANGE = 1;
+int DISTANCE = 150;
 
-
-
-// 4 Directions at an intersections
-int DIRECTIONS = 4;
 
 int main() {
 
@@ -42,11 +39,12 @@ int main() {
     if (trafficFile == NULL){
         printf("Could not open traffic file\n");
     }
-
+    // Find out how many lines are in the text file
     int n;
     fscanf(trafficFile,"%d",&n);
     printf("%d\n",n);
 
+    // Import Data
     for (i = 0; i < n; i++){
         int temp = 0;
         int temp2 = 0;
@@ -67,18 +65,20 @@ int main() {
     if (lightFile == NULL){
         printf("Could not open Light file\n");
     }
+    // Find out how many lines are in the text file
     n = 0;
     fscanf(lightFile,"%d",&n);
     printf("%d\n",n);
 
-    int greenTimes [n];
-    int amberTimes [n];
-    int allRedTimes [n];
-    int redTimes [n];
+    double greenTimes [n];
+    double amberTimes [n];
+    double allRedTimes [n];
+    double redTimes [n];
 
+    // Import Data
     for(i = 0; i < n; i++){
-        fscanf(lightFile, "%d %d %d %d", &greenTimes[i], &amberTimes[i], &allRedTimes[i], &redTimes[i]);
-        printf("%d %d %d %d\n", greenTimes[i], amberTimes[i], allRedTimes[i], redTimes[i]);
+        fscanf(lightFile, "%f %f %f %f", &greenTimes[i], &amberTimes[i], &allRedTimes[i], &redTimes[i]);
+        printf("%f %f %f %f\n", greenTimes[i], amberTimes[i], allRedTimes[i], redTimes[i]);
     }
     fclose(lightFile);
 
@@ -88,10 +88,12 @@ int main() {
     if(busesFile == NULL){
         printf("Could not open buses file\n");
     }
+    // Find out how many lines are in the text file
     n = 0;
     fscanf(busesFile,"%d",&n);
     printf("%d\n",n);
 
+    // Import Data
     int busesPerHour[n];
     for(i = 0; i < n; i++){
         fscanf(busesFile, "%d", &busesPerHour[i]);
@@ -103,11 +105,16 @@ int main() {
 
     // Calculate percent chances
     // given 50 km/h on princess and 20 km/h leaving the Cataraqui center
-    int timeFor150m [4] = {11,11,11,36};
+    int speed [4] = {14, 14, 14, 6};
     int percentGreen [4];
     int percentExtend [4];
     int percentRed [4];
+    int timeFor150m [4];
 
+    // Calculate how long it takes for the bus to go 150m (amount of time that the bus will extend the light for)
+    for(i = 0; i < 4; i++){
+        timeFor150m[i] = DISTANCE / speed[i];
+    }
 
     int hour = 0;
     int maxHours = 24;

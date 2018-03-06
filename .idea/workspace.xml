@@ -12,6 +12,7 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="6c1fd1bd-643e-42f6-8dbc-1dd1202c0f0c" name="Default" comment="" />
 =======
     <list default="true" id="6c1fd1bd-643e-42f6-8dbc-1dd1202c0f0c" name="Default" comment="">
@@ -56,6 +57,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.c" afterPath="$PROJECT_DIR$/main.c" />
     </list>
 >>>>>>> cfaf5ba8431fee5c3ee9a82f8d25db64ee8fa057
+=======
+    <list default="true" id="6c1fd1bd-643e-42f6-8dbc-1dd1202c0f0c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.c" afterPath="$PROJECT_DIR$/main.c" />
+    </list>
+>>>>>>> parent of 72e7418... merge
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,6 +76,7 @@
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="426">
               <caret line="112" column="22" lean-forward="true" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
 =======
@@ -81,6 +88,10 @@
               <caret line="117" column="24" lean-forward="true" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
 >>>>>>> a93018eff87ae0e989781b032bbfdcdca6969598
 >>>>>>> cfaf5ba8431fee5c3ee9a82f8d25db64ee8fa057
+=======
+            <state relative-caret-position="681">
+              <caret line="117" column="24" lean-forward="true" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
+>>>>>>> parent of 72e7418... merge
               <folding />
             </state>
           </provider>
@@ -245,15 +256,20 @@
       <workItem from="1520009848885" duration="4866000" />
       <workItem from="1520207869016" duration="5283000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1520218131608" duration="5726000" />
 =======
       <workItem from="1520218131608" duration="5681000" />
 >>>>>>> a93018eff87ae0e989781b032bbfdcdca6969598
 >>>>>>> cfaf5ba8431fee5c3ee9a82f8d25db64ee8fa057
+=======
+      <workItem from="1520218131608" duration="5681000" />
+>>>>>>> parent of 72e7418... merge
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="25082000" />
 =======
@@ -273,6 +289,9 @@
 =======
     <option name="totallyTimeSpent" value="25037000" />
 >>>>>>> cfaf5ba8431fee5c3ee9a82f8d25db64ee8fa057
+=======
+    <option name="totallyTimeSpent" value="25037000" />
+>>>>>>> parent of 72e7418... merge
   </component>
   <component name="ToolWindowManager">
     <frame x="1127" y="0" width="1126" height="1440" extended-state="0" />
@@ -289,7 +308,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931423" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
 >>>>>>> a93018eff87ae0e989781b032bbfdcdca6969598
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22682743" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22682743" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -551,6 +570,7 @@
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="426">
           <caret line="112" column="22" lean-forward="true" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
 =======
@@ -562,6 +582,10 @@
           <caret line="117" column="24" lean-forward="true" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
 >>>>>>> a93018eff87ae0e989781b032bbfdcdca6969598
 >>>>>>> cfaf5ba8431fee5c3ee9a82f8d25db64ee8fa057
+=======
+        <state relative-caret-position="681">
+          <caret line="117" column="24" lean-forward="true" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
+>>>>>>> parent of 72e7418... merge
           <folding />
         </state>
       </provider>
