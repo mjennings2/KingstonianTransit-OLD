@@ -22,23 +22,17 @@ int main() {
      * Light timing In format TBD.
      *
     */
+    char line[80];
+    FILE * fr;
+    fr = fopen ("Intersections.txt", "r");  /* open the file for reading */
 
-    int i=0;
-    int trafficCount [3][12][4][1];
-    int intersections [4] = { };
-    int hours [12] = { 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 };
-    int north [3][12];
-    int south [3][12];
-    int east [3][12];
-    int west [3][12];
-
-
-    // Scan Traffic count and input number of cars in each direction
-    FILE * trafficFile;
-    trafficFile = fopen("../trafficCount.txt","r");
-    if (trafficFile == NULL){
-        printf("Could not open traffic file\n");
+    while(fgets(line, 80, fr) != NULL)
+    {
+        /* get a line, up to 80 chars from fr.  done if NULL */
+        fscanf(fr,"%f %f %f",&accel_x[i],&accel_y[i],&accel_z[i]);
+        fscanf(fr,"%f %f %f", );
     }
+<<<<<<< HEAD
     // Find out how many lines are in the text file
     int n;
     fscanf(trafficFile,"%d",&n);
@@ -54,12 +48,13 @@ int main() {
         printf("%d %d %d %d\n", north[temp][temp2], south[temp][temp2], east[temp][temp2], west[temp][temp2]);
     }
     fclose(trafficFile);
+=======
+    fclose(fr);  /* close the file prior to exiting the routine */
 
-    // Scan Intersections and input amount of time for each phase of the light in the buses direction of travel.
-    // This is for the direction the bus is traveling (EBL/WBL, E/W, NBL/SBL, N/S)
-    // Intersection Green Amber All-Red Red
-    i = 0;
+>>>>>>> parent of cfaf5ba... Merge branch 'master' of https://github.com/mjennings2/KingstonianTransit
 
+
+<<<<<<< HEAD
     FILE * lightFile;
     lightFile = fopen("../Intersections.txt","r");
     if (lightFile == NULL){
@@ -130,15 +125,21 @@ int main() {
 
         }
     }
+=======
+
+
+    // Computation
+
+>>>>>>> parent of cfaf5ba... Merge branch 'master' of https://github.com/mjennings2/KingstonianTransit
 
     // Output
     printf("Hello Workd!\n");
-    i = 0;
+    int i = 0;
     for(i=0; i<3;i++){
         printf("%d\n",i);
-       //printf("%c",line[i]);
+        printf("%c",line[i]);
     }
-    //return 0;
+    return 0;
 }
 
 
